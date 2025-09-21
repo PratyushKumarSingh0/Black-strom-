@@ -1,0 +1,100 @@
+/* Login Animation */
+.scale-in {
+    animation: scaleIn 0.5s ease forwards;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Section Transitions */
+.slide-in {
+    animation: slideIn 0.5s ease forwards;
+}
+
+.slide-out {
+    animation: slideOut 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+}
+
+/* Neon Effects for Night Mode */
+.night-mode .cyber-text {
+    text-shadow: 0 0 5px var(--primary-night), 0 0 10px var(--primary-night), 0 0 20px var(--primary-night);
+}
+
+.night-mode .service-icon, 
+.night-mode .differentiator-icon,
+.night-mode .feature-icon {
+    filter: drop-shadow(0 0 2px var(--accent-night));
+}
+
+.night-mode .stat-number {
+    text-shadow: 0 0 5px var(--accent-night);
+}
+
+.night-mode .pricing-card.featured {
+    box-shadow: 0 0 15px rgba(255, 42, 109, 0.5);
+}
+
+/* Hover Animations */
+.service-card:hover .service-icon {
+    animation: pulse 1s infinite;
+}
+
+.differentiator-card:hover .differentiator-icon {
+    animation: bounce 0.5s;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Stats Counter Animation */
+.stat-number {
+    display: inline-block;
+}
+
+/* Testimonial Slider Animation */
+.testimonial {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

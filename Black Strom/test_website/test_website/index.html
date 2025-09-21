@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="day-mode">
+    <div class="login-container scale-in">
+        <div class="login-header">
+            <h1><span class="cyber-text">Cyber</span>Shield</h1>
+            <p>Advanced Cybersecurity Solutions</p>
+        </div>
+        <form id="loginForm" class="login-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="cyber-button">Login</button>
+        </form>
+        <div class="login-footer">
+            <p>New to CyberShield? <a href="#">Register here</a></p>
+            <p><a href="#">Forgot password?</a></p>
+        </div>
+    </div>
+    <div class="mode-toggle">
+        <button id="modeToggle" class="cyber-button small">Night Mode</button>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
